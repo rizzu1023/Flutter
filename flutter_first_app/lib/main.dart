@@ -4,9 +4,6 @@ void main() {
   runApp(myfirstapp());
 }
 
-//stateful   (Dynamic)
-//stateless   (static)
-
 
 
 class myfirstapp extends StatefulWidget {
@@ -45,6 +42,8 @@ class _homepageState extends State<homepage> {
 
   @override
   Widget build(BuildContext context) {
+    print('build method');
+    print(counter);
     return Scaffold(
       appBar: AppBar(
         title: Text('Counter'),
